@@ -1,6 +1,6 @@
 #!/bin/bash
 
-deepspeed llava/train/train_mem.py \
+deepspeed llava/train/train_xformers.py \
     --lora_enable True --lora_r 128 --lora_alpha 256 --mm_projector_lr 2e-5 \
     --deepspeed ./scripts/zero3.json \
     --model_name_or_path meta-llama/Meta-Llama-3-8B-Instruct \
