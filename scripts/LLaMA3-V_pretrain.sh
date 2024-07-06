@@ -12,7 +12,7 @@ deepspeed llava/train/train_xformers.py \
     --mm_vision_select_layer -2 \
     --mm_use_im_start_end False \
     --mm_use_im_patch_token False \
-    --fp16 True \
+    --fp16 False \
     --output_dir ./checkpoints/brainbustergpt-pretrain \
     --num_train_epochs 1 \
     --per_device_train_batch_size 32 \
@@ -27,7 +27,7 @@ deepspeed llava/train/train_xformers.py \
     --warmup_ratio 0.03 \
     --lr_scheduler_type "cosine" \
     --logging_steps 1 \
-    --tf16 True \
+    --tf16 False \
     --model_max_length 2048 \
     --gradient_checkpointing True \
     --dataloader_num_workers 4 \
