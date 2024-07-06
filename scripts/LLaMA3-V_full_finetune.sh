@@ -1,6 +1,6 @@
 #!/bin/bash
 
-deepspeed llava/train/train_mem.py \
+deepspeed llava/train/train_xformers.py \
     --deepspeed ./scripts/zero3.json \
     --model_name_or_path meta-llama/Meta-Llama-3-8B-Instruct \
     --version llama3 \
